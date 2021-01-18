@@ -14,9 +14,4 @@ RUN	apt autoclean;\
 	apt autoremove;\
 	rm -f *.deb
 
-COPY start.sh /data/start.sh
-COPY open.py /data/open.py
-
-ENV DISPLAY :42
-
 ENTRYPOINT ["./start.sh"]
