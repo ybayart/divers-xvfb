@@ -15,5 +15,6 @@ RUN	apt autoclean;\
 	rm -f *.deb
 
 COPY start.sh .
+EXPOSE 5900
 
 ENTRYPOINT ["./start.sh"]
