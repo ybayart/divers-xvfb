@@ -14,4 +14,6 @@ RUN	apt autoclean;\
 	apt autoremove;\
 	rm -f *.deb
 
+COPY start.sh .
+
 ENTRYPOINT ["./start.sh"]
